@@ -42,3 +42,6 @@ cp /vagrant/id_rsa ~.ssh/
 	- 32ビットOSの場合はpresice64ではなくpresice32を使うようにVagrantfileを修正してください。
 - 処理が遅い
 	- 本来はローカル環境にRubyを導入して<code>engineyard</code>Gemを導入するのが本道です。Gemの導入ができるようにする適切な方法はお使いのOSや開発ツールによって非常に多彩です。解消方法がわからない場合の避難措置がこの仮想マシンと考えて下さい。 
+- WindowsでVagrantが起動しない
+	- Windowsのユーザー名が日本語だとVagrantの動作に支障をきたす場合があります。ユーザー名を変更するか、環境変数でVagrantが利用するディレクトリを変更して利用してください。
+- Windowsで<code>vagrant ssh</code>できない。 	- Windowsの場合はputtyなどを使って、独自にログインを行って下さい。秘密鍵はVagrantに内蔵されているものを使うと簡単に繋がります。 
